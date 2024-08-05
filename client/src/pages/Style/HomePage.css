@@ -1,0 +1,92 @@
+#hero {
+    min-height: 77vh;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.contentbox {
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+
+.heropara {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.btn {
+    font-size: 1.8rem;
+}
+
+
+/* set secton */
+
+.img-fluid {
+    width: 80%;
+    height: 300px;
+}
+
+/* book now section */
+.booknowsection {
+    background-image: url("../../../public/assets/booknowbg.svg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+
+.feature {
+    transition: all .5s;
+}
+
+.feature:hover {
+    cursor: pointer;
+    /* background-color: white; */
+    transform: scale(0.9);
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+
+/* latest product css */
+#latest-product-home .image-container img {
+    max-height: 170px;
+}
+
+#latest-product-home .card .sale-badge {
+    background-color: orangered !important;
+    color: white;
+    font-size: small;
+    padding: 2px 4px !important;
+    border-radius: 0px !important;
+}
+
+@media (min-height: 916px) {
+    #hero {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 998px) {
+
+    .contentbox {
+        padding-top: 0px !important;
+    }
+
+    .stepbox {
+        border: none !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .featureimgbox,
+    .mutedfeheading {
+        display: none !important;
+    }
+
+    .img-fluid {
+        width: 80%;
+        height: 210px;
+    }
+}

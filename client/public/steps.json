@@ -1,0 +1,16 @@
+{
+    "Steps": [
+        {
+            "url": "assets/step1.svg",
+            "description": "Enter your search criteria, Browse through a wide section of refurbished laptops from top brands"
+        },
+        {
+            "url": "assets/step2.svg",
+            "description": "Select your desired laptop model. You're one step closer to finding your ideal refurbished laptop"
+        },
+        {
+            "url": "assets/step3.svg",
+            "description": "Select the product and connect us on WhatsApp. Get ready to enjoy your refurbished laptop!"
+        }
+    ]
+}

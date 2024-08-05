@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ffffff;
+    --bgwhite: white;
+
+    --color1: hsla(337, 84, 48, 0.75);
+    --color2: hsla(160, 50, 48, 0.75);
+    --color3: hsla(190, 61, 65, 0.75);
+    --color4: hsla(41, 82, 52, 0.75);
+    --size: 2.5em;
+    --thickness: 0.5em;
+    --lat: calc((var(--size) - var(--thickness)) / 2);
+    --offset: calc(var(--lat) - var(--thickness));
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Apply custom scrollbar styles to all scrollable elements */
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: #446EDB #DFE9EB;
+} */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    display: none;
+    width: 1px;
+    /* Width of the scrollbar */
+}
+
+
+*::-webkit-scrollbar-track {
+    background: #DFE9EB;
+    /* Track color */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #446EDB;
+    /* Thumb color */
+    border-radius: 5px;
+    /* Round corners */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #3A5EBB;
+    /* Thumb color on hover */
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #4D7CF7;
+    /* Thumb color when clicked */
+}
+
+.bg-fade {
+    background-color: #F5F7F9;
+}
+
+.bg-orange {
+    background-color: #D34F2D;
+}
+
+.bg-org {
+    background-color: rgba(250, 235, 215, 0.345);
+}
+
+.bg-org-grad {
+    background: rgb(255, 178, 88);
+    background: linear-gradient(124deg, rgba(255, 178, 88, 0.13441873331363796) 10%, rgba(255, 178, 88, 0.30808820110075286) 27%, rgba(255, 158, 88, 0.41453077813156514) 50%, rgba(255, 178, 88, 0.30808820110075286) 73%, rgba(255, 178, 88, 0.1316176128654587) 90%);
+}
+
+.unLineheading {
+    position: relative;
+    display: inline-block;
+}
+
+.unLineheading::before {
+    content: "";
+    position: absolute;
+    background-color: #D34F2D;
+    width: 50%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+
+label {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    /* line-height: 6rem; */
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+@media (max-width: 998px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+}
+
+.ls-1 {
+    letter-spacing: 0.1rem;
+}
+
+.ls-2 {
+    letter-spacing: 0.2rem;
+}
+
+.ls-3 {
+    letter-spacing: 0.3rem;
+}
+
+.ls-4 {
+    letter-spacing: 0.4rem;
+}
+
+.ls-5 {
+    letter-spacing: 0.5rem;
+}

@@ -1,0 +1,154 @@
+#Admin-Panel {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+
+.admin-sidebar {
+    background-color: rgb(5, 5, 52);
+    min-height: 100vh;
+}
+
+.dashboard-content {
+    min-height: 100vh;
+}
+
+.admin-sidebar .navbelow {
+    display: none;
+}
+
+/* new css */
+.admin-header {
+    background-color: transparent;
+    position: static;
+    display: block;
+    height: auto;
+    padding: 20px;
+}
+
+.admin-header .mainlogo {
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.admin-header .navigation {
+    display: block;
+    border-top: 2px solid rgb(255, 255, 255);
+    padding-top: 5vh;
+}
+
+
+.admin-header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-header nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-header nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-header nav ul li:last-child {
+    border-bottom: none;
+}
+
+.admin-header nav ul li a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* admin dashboard hero */
+
+.dashboard-hero {
+    background-color: #034c67;
+    /* background-color: #1a4157; */
+    /* background-color: #1d2631; */
+    color: white;
+}
+
+
+
+.dashboard-hero span {
+    font-size: 14px;
+    color: #a4a2a2;
+}
+
+.dashboard-content section {
+    background-color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 1080px) {
+    #Admin-Panel {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .admin-header nav ul li {
+        padding: 10px;
+    }
+
+    .admin-header nav ul li a {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #Admin-Panel {
+        grid-template-columns: 100%;
+    }
+
+    .admin-sidebar {
+        height: auto;
+        min-height: auto;
+    }
+
+    .admin-sidebar .navbelow {
+        display: block;
+    }
+
+    .dashboard-hero span {
+        display: none;
+    }
+}
+
+
+
+
+/* upload image */
+.square-upload {
+    display: block;
+    max-width: 130px;
+    max-height: 130px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.square-upload:hover {
+    border-color: #aaa;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.image-preview {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

@@ -1,0 +1,33 @@
+footer {
+    font-size: 1.5rem;
+    /* padding: 10vh 0 5vh 0; */
+    text-transform: capitalize;
+}
+
+.footerr {
+    background-color: #22293f;
+}
+
+.text-white:hover .arrow {
+    transform: translateX(5px);
+    transition: transform 0.4s;
+}
+
+.text-left:hover {
+    background-color: rgba(250, 235, 215, 0.062);
+    padding: 5px 10px;
+    transition: transform 0.3s;
+}
+
+.allright {
+    background-color: #0e101a;
+    /* font-size: 1.2rem; */
+}
+
+
+@media (max-width: 998px) {
+    .allright {
+        background-color: #0e101a;
+        font-size: 1.26rem;
+    }
+}
