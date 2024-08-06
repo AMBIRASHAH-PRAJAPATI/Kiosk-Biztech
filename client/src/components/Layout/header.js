@@ -60,8 +60,8 @@ const Header = () => {
   const predefinedCategories = [
     { name: "HP", slug: "hp" },
     { name: "Lenovo", slug: "lenovo" },
+    { name: "Dell", slug: "dell" },
     { name: "Apple", slug: "apple" },
-    { name: "MacBook", slug: "macbook" },
   ];
 
   // Determine which categories to show

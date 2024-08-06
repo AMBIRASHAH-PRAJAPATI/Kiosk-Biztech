@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="text-capitalize heroheading my-5 fw-bolder lh-base"
           data-aos="zoom-in"
         >
-          Delivering high Quality refurnished laptops at{" "}
+          Delivering high Quality refurbished laptops at{" "}
           <span className="bg-warning text-dark px-1 rounded text-nowrap">
             Lowest prices !
           </span>{" "}
@@ -33,7 +33,7 @@ const HeroSection = () => {
           className="heropara my-5 text-body-secondary px-5"
           data-aos="zoom-in"
         >
-          Shop offering a wide range of quality, refurnished laptops at
+          Shop offering a wide range of quality, refurbished laptops at
           competitive prices. Specializes in providing top-notch customer
           service and technical support.
         </p>

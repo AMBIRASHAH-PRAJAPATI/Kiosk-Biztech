@@ -212,7 +212,7 @@ const ProductDetails = () => {
             <div className="row">
               {similarProducts.slice(0, 4).map((sp) => (
                 <div className="col-6 col-md-4 col-lg-3" key={sp.slug}>
-                  <ProductCard product={sp} />
+                  <ProductCard product={sp} url="/category" />
                 </div>
               ))}
             </div>

@@ -39,10 +39,15 @@ body {
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     font-size: 1.7rem;
+    overflow-x: hidden;
 }
 
 html {
     font-size: 62.5%;
+}
+
+.row {
+    margin-right: 0 !important;
 }
 
 /* Apply custom scrollbar styles to all scrollable elements */
@@ -145,24 +150,6 @@ h4 {
     font-size: 1.7rem;
 }
 
-@media (max-width: 998px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    h4 {
-        font-size: 1.7rem;
-    }
-}
-
 .ls-1 {
     letter-spacing: 0.1rem;
 }
@@ -181,4 +168,22 @@ h4 {
 
 .ls-5 {
     letter-spacing: 0.5rem;
+}
+
+@media (max-width: 998px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
 }

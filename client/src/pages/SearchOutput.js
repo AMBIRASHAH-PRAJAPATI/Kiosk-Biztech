@@ -4,7 +4,7 @@ import { useSearch } from "../context/search";
 import ProductCard from "../components/ProductCard";
 
 const SearchOutput = () => {
-  const [values, setValues] = useSearch();
+  const [values] = useSearch();
   return (
     <Layout title={"Search Results"}>
       <div className="products-layout p-5">
