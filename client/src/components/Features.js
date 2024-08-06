@@ -3,7 +3,7 @@ import React from "react";
 function Features() {
   return (
     <section className="bg-org pt-3 pb-5 ">
-      <div className="container bg-white my-5">
+      <div className="container bg-white my-5 pe-0">
         <div className="row align-items-center ">
           <div
             className="col-md-6 text-center featureimgbox"

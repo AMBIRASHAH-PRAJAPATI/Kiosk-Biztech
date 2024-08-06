@@ -223,7 +223,7 @@ const LaptopOfers = () => {
             </div>
             <div className="Products-right col-lg-9 col-xl-10 ps-lg-5 pe-0">
               <div className="my-md-5">
-                <div className="bg-white px-3 p-md-5">
+                <div className="bg-white px-3 p-md-5 pe-0">
                   <div className="py-5 mt-0 my-md-4 productsboard">
                     <div className="rightwhite">
                       <nav className="py-2">
@@ -235,7 +235,7 @@ const LaptopOfers = () => {
                         </Link>
                       </nav>
                       <h2 className="mt-4 text-uppercase">All Products</h2>
-                      <div className="d-flex justify-content-between pe-md-5 ">
+                      <div className="d-flex justify-content-between pe-md-5 pe-3">
                         <div>
                           <span>
                             Showing {startItem}-{endItem} of {totalProducts}{" "}

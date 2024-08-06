@@ -88,7 +88,7 @@ const ProductDetails = () => {
   return (
     <Layout>
       <section className="py-5 px-3" id="single_product_sec">
-        <div className="container-lg pt-md-5">
+        <div className="container-lg pt-md-5 p-0">
           <div className="row mt-2 g-2 g-lg-5">
             <div className="col-md-6 position-relative productimgdiv p-2 d-flex justify-content-center align-items-center">
               <figure className="mb-0 d-flex justify-content-center align-items-center">
@@ -207,9 +207,9 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="row py-5 my-5">
+          <div className="py-5 my-5">
             <h2 className="fw-bold">Related Products</h2>
-            <div className="row">
+            <div className="row pe-0">
               {similarProducts.slice(0, 4).map((sp) => (
                 <div className="col-6 col-md-4 col-lg-3" key={sp.slug}>
                   <ProductCard product={sp} url="/category" />

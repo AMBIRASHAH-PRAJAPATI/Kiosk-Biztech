@@ -75,7 +75,7 @@ const CategoryProduct = () => {
   return (
     <Layout title={`Kiosk Biztech - ${Category.slug}`} isloading={isloading}>
       <ProductsLayout isOpen={isOpen} togglefilter={togglefilter}>
-        <div className="bg-white px-3 p-md-5">
+        <div className="bg-white px-3 p-md-5 pe-0">
           <div className="py-5 mt-0 my-md-4 productsboard">
             <div className="rightwhite">
               <nav className="py-2">
@@ -93,7 +93,7 @@ const CategoryProduct = () => {
                 </Link>
               </nav>
               <h2 className="mt-4 text-uppercase">{Category.name}</h2>
-              <div className="d-flex justify-content-between pe-md-5">
+              <div className="d-flex justify-content-between pe-md-5 pe-3">
                 <div>
                   <span>
                     Showing {startItem}-{endItem} of {totalProducts} results

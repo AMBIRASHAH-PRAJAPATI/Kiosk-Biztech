@@ -6,7 +6,7 @@ const LatestProduct = () => {
   const { LatestProducts } = useLatestProduct();
   return (
     <section id="latest-product-home" className=" pt-0 p-sm-5 mb-5 my-md-5">
-      <div className="container">
+      <div className="container pe-0">
         <h2 className="fw-bold px-1 text-center text-md-start text-capitalize unLineheading">
           Latest laptops
         </h2>
