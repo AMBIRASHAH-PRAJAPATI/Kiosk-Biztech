@@ -44,7 +44,7 @@
 
 .menu-2 ul {
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .menu-2 .search-input-wrapper {

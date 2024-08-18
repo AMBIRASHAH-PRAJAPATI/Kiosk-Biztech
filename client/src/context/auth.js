@@ -49,6 +49,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     userAuthentication();
+    console.log(user.isAdmin);
   }, [userAuthentication]);
 
   return (
