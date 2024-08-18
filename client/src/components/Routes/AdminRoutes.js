@@ -16,7 +16,9 @@ export default function AdminRoutes() {
           Authorization: AuthorizationToken,
         },
       });
-      setIsAdmin(response.data.ok);
+
+      console.log("API Response:", response.data);
+      setIsAdmin(response.data.ok === true);
     } catch (error) {
       console.error("Error checking admin authentication:", error);
     }
