@@ -389,7 +389,7 @@ const CreateProduct = () => {
             </label>
             <Input
               id="otherDetails"
-              placeholder="Enter operating system details"
+              placeholder="Enter Other details"
               allowClear
               size="large"
               name="otherDetails"
