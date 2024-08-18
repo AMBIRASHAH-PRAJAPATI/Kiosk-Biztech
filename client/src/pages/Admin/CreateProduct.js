@@ -15,7 +15,7 @@ const CreateProduct = () => {
   const { Categories } = useCategory();
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [originalprice, setOriginalPrice] = useState("");
+  const [originalprice, setoriginalprice] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
   const [image, setImage] = useState("");
@@ -57,7 +57,7 @@ const CreateProduct = () => {
       const productData = new FormData();
       productData.append("name", name);
       productData.append("description", description);
-      productData.append("originalPrice", originalprice);
+      productData.append("originalprice", originalprice);
       productData.append("price", price);
       productData.append("category", category);
       productData.append("image", image);
@@ -213,7 +213,7 @@ const CreateProduct = () => {
               name="originalprice"
               size="large"
               onChange={(value) => {
-                setOriginalPrice(value);
+                setoriginalprice(value);
                 setErrors((prevErrors) => ({
                   ...prevErrors,
                   originalprice: null,
