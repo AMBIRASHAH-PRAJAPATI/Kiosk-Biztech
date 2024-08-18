@@ -16,13 +16,7 @@ export default function AdminRoutes() {
           Authorization: AuthorizationToken,
         },
       });
-      console.log(response.data.ok);
-      if (response.data.ok) {
-        setIsAdmin(true);
-      } else {
-        setIsAdmin(false);
-      }
-      console.log(isAdmin);
+      setIsAdmin(response.data.ok);
     } catch (error) {
       console.error("Error checking admin authentication:", error);
     }
@@ -35,6 +29,10 @@ export default function AdminRoutes() {
       navigate("/login");
     }
   }, [AuthorizationToken]);
+
+  useEffect(() => {
+    console.log(`Admin status updated: ${isAdmin}`);
+  }, [isAdmin]);
 
   return isAdmin ? <Outlet /> : <Loader />;
 }
