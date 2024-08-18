@@ -36,11 +36,12 @@ const productSchema = new mongoose.Schema(
       required: true,
     },
     specifications: {
-      processor: { type: String, required: false },
-      ram: { type: String, required: false },
-      storage: { type: String, required: false },
+      processor: { type: String, required: true },
+      ram: { type: String, required: true },
+      storage: { type: String, required: true },
       display: { type: String, required: false },
       operatingSystem: { type: String, required: false },
+      otherDetails: { type: String, required: false },
     },
   },
   { timestamps: true }

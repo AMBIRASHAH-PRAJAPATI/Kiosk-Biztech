@@ -49,13 +49,7 @@ const createProduct = async (req, res) => {
     }
 
     // Check if all required specifications are provided
-    const requiredSpecs = [
-      "processor",
-      "ram",
-      "storage",
-      "display",
-      "operatingSystem",
-    ];
+    const requiredSpecs = ["processor", "ram", "storage"];
     for (const spec of requiredSpecs) {
       if (!parsedSpecifications[spec]) {
         return res.status(400).send({

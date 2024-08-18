@@ -27,11 +27,14 @@ const UpdateProduct = () => {
   const [quantity, setQuantity] = useState("");
   const [pid, setPID] = useState("");
 
-  const [processor, setProcessor] = useState("");
-  const [ram, setRam] = useState("");
-  const [storage, setStorage] = useState("");
-  const [display, setDisplay] = useState("");
-  const [operatingSystem, setOperatingSystem] = useState("");
+  const [specifications, setSpecifications] = useState({
+    processor: "",
+    ram: "",
+    storage: "",
+    display: "",
+    operatingSystem: "",
+    otherDetails: "",
+  });
 
   //   single product
   const getSingleProduct = async () => {
@@ -56,11 +59,14 @@ const UpdateProduct = () => {
       setTonavigate(data.product.category.slug);
       setImage(data.product.image);
 
-      setProcessor(data.product.specifications.processor);
-      setRam(data.product.specifications.ram);
-      setStorage(data.product.specifications.storage);
-      setDisplay(data.product.specifications.display);
-      setOperatingSystem(data.product.specifications.operatingSystem);
+      setSpecifications({
+        processor: data.product.specifications.processor,
+        ram: data.product.specifications.ram,
+        storage: data.product.specifications.storage,
+        display: data.product.specifications.display,
+        operatingSystem: data.product.specifications.operatingSystem,
+        otherDetails: data.product.specifications.otherDetails,
+      });
 
       setLoading(false);
     } catch (error) {
@@ -85,11 +91,7 @@ const UpdateProduct = () => {
       productData.append("category", category);
       updatedIMG && productData.append("image", updatedIMG);
       productData.append("quantity", quantity);
-      productData.append("specifications[processor]", processor);
-      productData.append("specifications[ram]", ram);
-      productData.append("specifications[storage]", storage);
-      productData.append("specifications[display]", display);
-      productData.append("specifications[operatingSystem]", operatingSystem);
+      productData.append("specifications", JSON.stringify(specifications));
 
       const { data } = await axios.put(
         `${API}/api/product/update-product/${pid}`,
@@ -296,9 +298,12 @@ const UpdateProduct = () => {
               allowClear
               size="large"
               name="processor"
-              value={processor}
+              value={specifications.processor}
               onChange={(e) => {
-                setProcessor(e.target.value);
+                setSpecifications({
+                  ...specifications,
+                  processor: e.target.value,
+                });
               }}
             />
           </div>
@@ -315,9 +320,9 @@ const UpdateProduct = () => {
               allowClear
               size="large"
               name="ram"
-              value={ram}
+              value={specifications.ram}
               onChange={(e) => {
-                setRam(e.target.value);
+                setSpecifications({ ...specifications, ram: e.target.value });
               }}
             />
           </div>
@@ -334,9 +339,12 @@ const UpdateProduct = () => {
               allowClear
               size="large"
               name="storage"
-              value={storage}
+              value={specifications.storage}
               onChange={(e) => {
-                setStorage(e.target.value);
+                setSpecifications({
+                  ...specifications,
+                  storage: e.target.value,
+                });
               }}
             />
           </div>
@@ -353,9 +361,12 @@ const UpdateProduct = () => {
               allowClear
               size="large"
               name="display"
-              value={display}
+              value={specifications.display}
               onChange={(e) => {
-                setDisplay(e.target.value);
+                setSpecifications({
+                  ...specifications,
+                  display: e.target.value,
+                });
               }}
             />
           </div>
@@ -372,9 +383,34 @@ const UpdateProduct = () => {
               allowClear
               size="large"
               name="operatingSystem"
-              value={operatingSystem}
+              value={specifications.operatingSystem}
               onChange={(e) => {
-                setOperatingSystem(e.target.value);
+                setSpecifications({
+                  ...specifications,
+                  operatingSystem: e.target.value,
+                });
+              }}
+            />
+          </div>
+          <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
+            <label
+              className="text-sm text-gray-400 font-medium fw-medium mb-3"
+              for="otherDetails"
+            >
+              Other Details
+            </label>
+            <Input
+              id="otherDetails"
+              placeholder="Enter operating system details"
+              allowClear
+              size="large"
+              name="otherDetails"
+              value={specifications.otherDetails}
+              onChange={(e) => {
+                setSpecifications({
+                  ...specifications,
+                  otherDetails: e.target.value,
+                });
               }}
             />
           </div>

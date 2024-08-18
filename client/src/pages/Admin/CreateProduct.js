@@ -26,6 +26,7 @@ const CreateProduct = () => {
     storage: "",
     display: "",
     operatingSystem: "",
+    otherDetails: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -132,7 +133,6 @@ const CreateProduct = () => {
               </div>
             )}
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -158,7 +158,6 @@ const CreateProduct = () => {
               <div className="text-danger fs-5 mt-1">{errors.name} &#33;</div>
             )}
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 mb-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -195,7 +194,6 @@ const CreateProduct = () => {
               </div>
             )}
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -251,7 +249,6 @@ const CreateProduct = () => {
               <div className="text-danger fs-5  mt-1">{errors.price} &#33;</div>
             )}
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -280,7 +277,6 @@ const CreateProduct = () => {
               </div>
             )}
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -302,7 +298,6 @@ const CreateProduct = () => {
               }}
             />
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -321,7 +316,6 @@ const CreateProduct = () => {
               }}
             />
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -343,7 +337,6 @@ const CreateProduct = () => {
               }}
             />
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -365,7 +358,6 @@ const CreateProduct = () => {
               }}
             />
           </div>
-
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -388,6 +380,27 @@ const CreateProduct = () => {
             />
           </div>
 
+          <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
+            <label
+              className="text-gray-400 font-medium fw-medium mb-3"
+              for="otherDetails"
+            >
+              Other Details
+            </label>
+            <Input
+              id="otherDetails"
+              placeholder="Enter operating system details"
+              allowClear
+              size="large"
+              name="otherDetails"
+              onChange={(e) => {
+                setSpecifications({
+                  ...specifications,
+                  otherDetails: e.target.value,
+                });
+              }}
+            />
+          </div>
           <div className="grid w-full max-w-xs gap-1.5 my-4 pb-2">
             <label
               className="text-gray-400 font-medium fw-medium mb-3"
@@ -417,7 +430,6 @@ const CreateProduct = () => {
               <div className="text-danger fs-5 mt-1">{errors.description}</div>
             )}
           </div>
-
           <div className="w-full my-4 pb-2">
             <button type="submit" className="btn btn-primary">
               Create Product
