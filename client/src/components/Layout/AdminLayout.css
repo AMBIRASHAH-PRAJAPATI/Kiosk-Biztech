@@ -77,7 +77,6 @@
 }
 
 
-
 .dashboard-hero span {
     font-size: 14px;
     color: #a4a2a2;
@@ -88,7 +87,7 @@
 }
 
 .dashboard-content main {
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-y: scroll;
 }
 
