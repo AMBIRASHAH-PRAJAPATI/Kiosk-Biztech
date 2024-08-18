@@ -29,6 +29,7 @@ export default function AdminRoutes() {
   useEffect(() => {
     if (AuthorizationToken) {
       checkAdminAuth();
+      console.log(isAdmin);
     } else {
       navigate("/login");
     }

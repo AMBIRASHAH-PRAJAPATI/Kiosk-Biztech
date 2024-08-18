@@ -221,7 +221,7 @@ const LaptopOfers = () => {
                 ))}
               </div>
             </div>
-            <div className="Products-right col-lg-9 col-xl-10 ps-lg-5 pe-0">
+            <div className="Products-right col-lg-9 col-xl-10 ps-lg-2 ps-xl-5 pe-0">
               <div className="my-md-5">
                 <div className="bg-white px-3 p-md-5 pe-0">
                   <div className="py-5 mt-0 my-md-4 productsboard">
