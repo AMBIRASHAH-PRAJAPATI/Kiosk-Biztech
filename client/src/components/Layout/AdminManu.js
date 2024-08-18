@@ -58,7 +58,7 @@ const AdminManu = () => {
   );
   return (
     <header className={`${isMobile ? "main-nav" : "admin-header"}`}>
-      <div className="mainlogo">
+      <div className="mainlogo d-flex align-items-center justify-content-center ms-4 ms-md-2 ms-lg-1">
         <NavLink href="" to="/" onClick={toggleNav}>
           <img
             src="/assets/kiosk-biztech-logo.png"

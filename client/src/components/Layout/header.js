@@ -115,7 +115,7 @@ const Header = () => {
           {/* 2nd menu*/}
           <div className="menu-2">
             {isLoggedIn ? (
-              <ul className="ps-lg-0 mb-0">
+              <ul className="mb-0">
                 <li className="search-input-wrapper">
                   <SearchInput />
                 </li>
