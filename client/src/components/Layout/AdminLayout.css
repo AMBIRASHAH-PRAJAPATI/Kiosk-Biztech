@@ -87,6 +87,11 @@
     background-color: #f0f0f0;
 }
 
+.dashboard-content main {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
 
 @media screen and (max-width: 1080px) {
     #Admin-Panel {
