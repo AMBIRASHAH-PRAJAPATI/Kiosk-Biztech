@@ -6,18 +6,17 @@ import Loader from "../spinner/Loader";
 
 export default function AdminRoutes() {
   const [isAdmin, setIsAdmin] = useState(false);
-  const { AuthorizationToken } = useAuth();
+  const { AuthorizationToken, API } = useAuth();
   const navigate = useNavigate();
 
   const checkAdminAuth = async () => {
     try {
-      const response = await axios.get("/api/admin/admin-auth", {
+      console.log(AuthorizationToken);
+      const response = await axios.get(`${API}/api/admin/admin-auth`, {
         headers: {
           Authorization: AuthorizationToken,
         },
       });
-
-      console.log("API Response:", response.data);
       setIsAdmin(response.data.ok === true);
     } catch (error) {
       console.error("Error checking admin authentication:", error);
@@ -31,10 +30,6 @@ export default function AdminRoutes() {
       navigate("/login");
     }
   }, [AuthorizationToken]);
-
-  useEffect(() => {
-    console.log(`Admin status updated: ${isAdmin}`);
-  }, [isAdmin]);
 
   return isAdmin ? <Outlet /> : <Loader />;
 }

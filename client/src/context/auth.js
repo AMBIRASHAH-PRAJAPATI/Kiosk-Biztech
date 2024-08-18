@@ -40,7 +40,6 @@ export const AuthProvider = ({ children }) => {
         },
       });
       if (response.status === 200) {
-        console.log(response.data.userData);
         setUser(response.data.userData);
       }
     } catch (error) {
