@@ -56,6 +56,10 @@ const Products = () => {
   };
 
   useEffect(() => {
+    setCurrentPage(1); // Reset currentPage to 1 whenever slug changes
+  }, [slug]);
+
+  useEffect(() => {
     getProducts(currentPage, sortOrder);
   }, [slug, currentPage, sortOrder]);
 

@@ -68,12 +68,19 @@ const ProductDetails = () => {
 
     const specEntries = Object.entries(specs); // Convert specifications object to array of [key, value] pairs
 
-    return specEntries.map(([key, value]) => (
-      <li className="mb-3" key={key}>
-        <span className="fw-medium">{formatSpecLabel(key)}: </span>
-        {value}
-      </li>
-    ));
+    return specEntries.map(([key, value]) => {
+      if (!value) {
+        // Check if value is null, undefined, or an empty string
+        return null; // Skip rendering if value is null, undefined, or empty
+      }
+
+      return (
+        <li className="mb-3" key={key}>
+          <span className="fw-medium">{formatSpecLabel(key)}: </span>
+          {value}
+        </li>
+      );
+    });
   };
 
   // Helper function to format specification labels
