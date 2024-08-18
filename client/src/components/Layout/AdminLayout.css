@@ -87,7 +87,7 @@
 }
 
 .dashboard-content main {
-    max-height: 90vh;
+    max-height: 85vh;
     overflow-y: scroll;
 }
 
