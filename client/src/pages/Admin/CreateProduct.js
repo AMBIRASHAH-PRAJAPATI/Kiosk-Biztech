@@ -76,7 +76,7 @@ const CreateProduct = () => {
 
       if (data?.success) {
         message.success(`${data.message}: ${name}`);
-        navigate("/dashboard/admin/products");
+        navigate("/dashboard/admin/products/all-products");
       } else {
         message.error(data?.message);
       }

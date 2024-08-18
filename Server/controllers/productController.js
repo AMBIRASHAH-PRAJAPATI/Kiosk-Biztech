@@ -9,13 +9,21 @@ import uploadOnCloudinary from "../utils/cloudinary.js";
 
 const createProduct = async (req, res) => {
   try {
-    const { name, description, price, category, quantity, specifications } =
-      req.body;
+    const {
+      name,
+      description,
+      originalprice,
+      price,
+      category,
+      quantity,
+      specifications,
+    } = req.body;
 
     // Check if required fields are provided
     if (
       !name ||
       !description ||
+      !originalprice ||
       !price ||
       !category ||
       !quantity ||
