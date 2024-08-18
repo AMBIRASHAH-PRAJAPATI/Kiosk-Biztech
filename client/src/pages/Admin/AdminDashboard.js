@@ -108,6 +108,7 @@ const AdminDashboard = () => {
             <strong>Product Count by Category:</strong>
           </h4>
           <List
+            className="text-capitalize"
             dataSource={countsByCat}
             renderItem={(item) => (
               <List.Item>

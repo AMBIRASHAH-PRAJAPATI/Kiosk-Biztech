@@ -119,6 +119,10 @@
     .dashboard-hero span {
         display: none;
     }
+
+    .dashboard-content {
+        padding-top: 20px;
+    }
 }
 
 

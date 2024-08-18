@@ -11,7 +11,6 @@ export default function AdminRoutes() {
 
   const checkAdminAuth = async () => {
     try {
-      console.log(AuthorizationToken);
       const response = await axios.get(`${API}/api/admin/admin-auth`, {
         headers: {
           Authorization: AuthorizationToken,

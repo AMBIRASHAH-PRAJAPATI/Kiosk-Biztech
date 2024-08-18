@@ -59,13 +59,12 @@ const AdminManu = () => {
   return (
     <header className={`${isMobile ? "main-nav" : "admin-header"}`}>
       <div className="mainlogo">
-        <NavLink
-          href=""
-          to="/"
-          className="text-capitalized"
-          onClick={toggleNav}
-        >
-          <h2 className="">Brand</h2>
+        <NavLink href="" to="/" onClick={toggleNav}>
+          <img
+            src="/assets/kiosk-biztech-logo.png"
+            alt="kiosk-biztech"
+            className="kiosk-biztech-logo"
+          />
         </NavLink>
       </div>
       <div className={`navigation ${isOpen ? "opennave" : ""}`}>

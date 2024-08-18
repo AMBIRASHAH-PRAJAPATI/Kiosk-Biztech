@@ -63,7 +63,7 @@ const Products = () => {
     setSortOrder(value);
     setCurrentPage(1); // Reset to first page on sort change
   };
-  const startItem = (currentPage - 1) * perPage + 1;
+  const startItem = totalProducts === 0 ? 0 : (currentPage - 1) * perPage + 1;
   const endItem = Math.min(currentPage * perPage, totalProducts);
 
   return (
