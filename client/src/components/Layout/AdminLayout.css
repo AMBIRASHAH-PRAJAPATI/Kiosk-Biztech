@@ -124,7 +124,7 @@
         padding-top: 20px;
     }
 
-    .admin-header nav ul li a {
+    .main-nav .mainmenu ul li a {
         color: black;
     }
 }
