@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import useCategory from "../../hooks/useCategory.js";
 import axios from "axios";
@@ -15,9 +15,12 @@ const ProductsLayout = ({ children, isOpen, togglefilter }) => {
   const [counts, setCounts] = useState([]);
   const [totalecount, settotalCount] = useState(0);
 
+  const sidebarRef = useRef(null); // Reference to the sidebar
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      sidebarRef.current.scrollIntoView({ behavior: "smooth" });
     } else {
       document.body.style.overflow = "auto";
     }
@@ -59,6 +62,7 @@ const ProductsLayout = ({ children, isOpen, togglefilter }) => {
       <div className="py-5 pproducts-layout-container">
         <div className="my-lg-5 pt-0 py-lg-4 row position-relative">
           <div
+            ref={sidebarRef}
             className={`Product-sidebar col-lg-3 col-xl-2 py-5 px-4 pe-lg-0 px-xl-2  ${
               isOpen ? "openProduct-sidebar" : ""
             }`}
@@ -124,6 +128,12 @@ const ProductsLayout = ({ children, isOpen, togglefilter }) => {
           <div className="Products-right col-lg-9 col-xl-10 ps-lg-5 pe-0">
             <main className="my-lg-5">{children}</main>
           </div>
+          {isOpen && (
+            <div
+              className="backdrop position-fixed top-0 start-0 w-100 h-100"
+              onClick={() => togglefilter()}
+            ></div>
+          )}
         </div>
       </div>
     </div>
