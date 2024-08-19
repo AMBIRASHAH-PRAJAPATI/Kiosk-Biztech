@@ -11,7 +11,7 @@ function Steps() {
   }, []);
 
   return (
-    <section className="steps-section container pt-3 pb-5 mb-md-5">
+    <section className="steps-section container pt-3 pb-5 mb-md-5 pe-0">
       <h2 className=" text-capitalize step-sec-heading fw-bold pt-5 pb-3 mb-5 px-1 text-center text-md-start unLineheading">
         Find your perfect laptops
       </h2>

@@ -53,7 +53,7 @@ function Features() {
                     <h4 className="mt-3 fw-semibold">Cash on Delivery</h4>
                   </div>
                 </div>
-                <div className="col-6 text-center feature">
+                <div className="col-6 text-center feature pe-0 pe-sm-2">
                   <div className="py-4">
                     <div className="text-muted ">
                       <img
@@ -89,7 +89,7 @@ function Features() {
                     <h4 className="mt-3 fw-semibold">Free Demo</h4>
                   </div>
                 </div>
-                <div className="col-6 text-center feature">
+                <div className="col-6 text-center feature pe-0 pe-sm-2">
                   <div className="py-4 d-flex flex-column justify-content-between h-100">
                     <div className="text-muted mt-4">
                       <img

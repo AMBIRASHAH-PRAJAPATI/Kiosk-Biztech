@@ -162,4 +162,9 @@
     .productsCardImg {
         max-height: 20rem;
     }
+
+    .card-body {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
