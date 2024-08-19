@@ -77,7 +77,12 @@ const CategoryProduct = () => {
   const endItem = Math.min(currentPage * perPage, totalProducts);
 
   return (
-    <Layout title={`Kiosk Biztech - ${Category.slug}`} isloading={isloading}>
+    <Layout
+      title={`Kiosk Biztech - ${Category.slug}`}
+      description={`Explore our selection of ${Category.slug} at Kiosk Biztech. We offer high-quality refurbished laptops in the ${Category.slug} category at affordable prices. Find the best deals on laptops that suit your needs and budget.`}
+      keyword={`${Category.slug}, refurbished laptops, ${Category.slug} deals, affordable ${Category.slug}, ${Category.slug} laptops for sale, buy ${Category.slug} laptops online, second-hand ${Category.slug}, budget-friendly ${Category.slug}`}
+      isloading={isloading}
+    >
       <ProductsLayout isOpen={isOpen} togglefilter={togglefilter}>
         <div className="bg-white px-3 p-md-5">
           <div className="py-5 mt-0 my-md-4 productsboard">

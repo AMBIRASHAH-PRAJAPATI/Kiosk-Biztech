@@ -93,7 +93,11 @@ const ProductDetails = () => {
   };
 
   return (
-    <Layout>
+    <Layout
+      title={`${product.name} - Buy Refurbished Laptops at Kiosk Biztech`}
+      description={`${product.description}. Discover more about this product including its specifications, price, and availability. Explore top deals on refurbished laptops and get the best value at Kiosk Biztech.`}
+      keyword={`${product.name}, ${product.category}, refurbished laptops, ${product.name} details, buy ${product.name}, best deals on ${product.category}, affordable laptops, laptop specifications, ${product.name} reviews`}
+    >
       <section className="py-5 px-3" id="single_product_sec">
         <div className="container-lg pt-md-5 p-0">
           <div className="row mt-2 g-2 g-lg-5">

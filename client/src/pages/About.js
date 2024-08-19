@@ -6,7 +6,11 @@ import FAQ from "../components/FAQ";
 
 const About = () => {
   return (
-    <Layout title={"About Us"}>
+    <Layout
+      title="About Us - Kiosk Biztech | Leading Supplier of Refurbished Laptops"
+      description="Learn more about Kiosk Biztech, your trusted supplier for high-quality refurbished laptops. Discover our mission, values, and commitment to providing affordable technology solutions."
+      keyword="About Kiosk Biztech, refurbished laptop supplier, affordable laptops, trusted laptop seller, laptop resale, second-hand laptops, laptop retailer, used laptops, budget-friendly laptops, laptop store, laptop sales"
+    >
       <div className="bg-fade pt-2 pt-sm-5- py-5">
         <section className="py-3 py-md-5 my-5 about-1stsec">
           <div className="container px-0">

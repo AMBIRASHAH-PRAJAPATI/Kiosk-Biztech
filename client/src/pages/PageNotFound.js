@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
   return (
-    <Layout title="Not Found">
+    <Layout
+      title="404 Not Found - Kiosk Biztech"
+      description="Sorry, the page you are looking for does not exist. At Kiosk Biztech, we offer a wide range of high-quality refurbished laptops. Use the navigation menu to find the products you need or contact us for assistance."
+      keyword="404 Not Found, page not found, Kiosk Biztech, refurbished laptops, laptop store, page error, product search, laptop deals"
+      isloading={false}
+    >
       <section className="inverted bg-orange">
         <div className="d-flex flex-column container min-vh-100 py-20">
           <div className="row align-items-center justify-content-center justify-content-lg-between my-auto">

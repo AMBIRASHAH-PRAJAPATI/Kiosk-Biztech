@@ -17,7 +17,11 @@ const Contact = () => {
   };
 
   return (
-    <Layout title={"Contact Kiosk Biztech"}>
+    <Layout
+      title="Contact Kiosk Biztech | Get in Touch with Us"
+      description="Have questions or need assistance? Contact Kiosk Biztech today for support with your refurbished laptop purchase. We're here to help you find the best deals on high-quality, affordable laptops. Reach out via phone, email, or visit our store."
+      keyword="Contact Kiosk Biztech, customer support, refurbished laptop inquiries, laptop assistance, contact laptop supplier, laptop store, laptop customer service, affordable laptops support, get in touch with Kiosk Biztech, buy laptops online"
+    >
       <div className="bg-fade">
         <section className="py-5 my-md-5 bg-org-grad shadow">
           <div className="">

@@ -8,8 +8,8 @@ import Spinner from "../spinner/spinner";
 const Layout = ({
   children,
   title = "Kiosk Biztech - shop now",
-  description = "Default Description",
-  keyword = "laptops, refurbished, 2nd hand, saste, laptop under 20000",
+  description = "Kiosk Biztech offers a wide range of high-quality refurbished laptops, perfect for budget-conscious shoppers. Whether you're looking for laptops under ₹20,000, second-hand laptops, or affordable options for personal or business use, Kiosk Biztech has you covered. Shop now to find great deals on top brands and get reliable devices at unbeatable prices. Our expertly refurbished laptops are thoroughly tested to ensure they meet high performance standards. Trust Kiosk Biztech for your next laptop purchase",
+  keyword = "refurbished laptops, second-hand laptops, cheap laptops under ₹20,000, affordable laptops, budget laptops, laptops for sale, used laptops India, buy refurbished laptops online, best deals on laptops, high-quality second-hand laptops, saste laptops, laptops for students, laptops for business use, reliable refurbished laptops",
   author = "Suresh Prajapati",
   isloading = false,
 }) => {

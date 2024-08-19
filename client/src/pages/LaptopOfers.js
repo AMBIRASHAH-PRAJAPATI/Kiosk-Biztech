@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import {
   Checkbox,
@@ -39,12 +39,10 @@ const LaptopOfers = () => {
   const { LatestProducts } = useLatestProduct();
 
   const itemsPerPage = 9;
-  const sidebarRef = useRef(null); // Reference to the sidebar
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
-      sidebarRef.current.scrollIntoView({ behavior: "smooth" });
     } else {
       document.body.style.overflow = "auto";
     }
@@ -139,12 +137,16 @@ const LaptopOfers = () => {
   const endItem = Math.min(currentPage * itemsPerPage, totalProducts);
 
   return (
-    <Layout title={"Kiosk Biztech - Best laptop offers"} isloading={isloading}>
+    <Layout
+      title="Kiosk Biztech - Best Laptop Offers & Deals"
+      description="Discover the best laptop offers at Kiosk Biztech. Browse our extensive selection of refurbished laptops with various filters to help you find the perfect match. Enjoy unbeatable deals on top brands and budget-friendly options. Shop now and find your ideal laptop at the best price."
+      keyword="best laptop offers, laptop deals, refurbished laptops, laptop discounts, find laptops online, laptop filters, budget laptops, top laptop brands, affordable laptops, laptop shopping, laptop deals India, buy laptops online"
+      isloading={isloading}
+    >
       <div className="products-layout">
         <div className="py-5 pproducts-layout-container">
           <div className="my-lg-5 py-4 row position-relative">
             <div
-              ref={sidebarRef}
               className={`Product-sidebar col-lg-3 col-xl-2 py-5 px-4 px-xl-2 ${
                 isOpen ? "openProduct-sidebar" : ""
               }`}

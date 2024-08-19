@@ -6,7 +6,11 @@ import ProductCard from "../components/ProductCard";
 const SearchOutput = () => {
   const [values] = useSearch();
   return (
-    <Layout title={"Search Results"}>
+    <Layout
+      title={`Search Results - Kiosk Biztech | Refurbished Laptops`}
+      description={`Browse the search results for refurbished laptops at Kiosk Biztech. Find a variety of options with detailed specifications and affordable prices. We offer top deals and a wide selection to meet your needs.`}
+      keyword="search results, refurbished laptops, laptop search, Kiosk Biztech, laptop deals, affordable laptops, laptop specifications, buy laptops online, laptop offers, laptop categories"
+    >
       <div className="products-layout p-5">
         <div className="p-5 mt-5">
           <div className="p-3 container shadow p-md-5 bg-white">
